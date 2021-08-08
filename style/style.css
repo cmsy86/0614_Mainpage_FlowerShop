@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* Reset */
+* {
+    color: #222;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    /* repeat 속성으로 배경 이미지 크기 조절 안됨 */
+    background-size: 100% 100%;
+    background-attachment: fixed;   /* 배경이미지를 전체화면에 채워줌 */
+}
+
+a:link {
+    color: #444;
+}
+
+a:visited {
+    color: #444;
+}
+
+a:hover {
+    color: #555;
+}
+
+a:active {
+    color: #555;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+.flexContainer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+/* Reset */
+
+/* div#wrap */
+div#wrap {
+    width: 1060px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+/* div#wrap */
+
+/* header#header */
+header#header {
+    width: 1060px;
+    height: 195px;
+}
+/* header#header */
+
+/* nav#gnb */
+nav#gnb {
+    padding-left: 40px;
+    background-color: #c51a3a;
+}
+
+#gnb a {
+    color: #fff;
+    font-size: 16px;
+    padding: 14px 10px;
+    display: inline-block;
+}
+
+#gnb a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+/* nav#gnb */
+
+/* main#main */
+div#shopImg {
+    padding: 20px;
+}
+
+div#greetingMsg {
+    padding: 50px 44px;
+}
+
+#greetingMsg h2 {
+    padding-left: 20px;
+    margin-bottom: 26px;
+}
+
+#greetingMsg p {
+    color: #d86539;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+/* main#main */
+
+/* div#contents */
+div#contents {
+    justify-content: space-around;
+}
+
+div#contents>div {
+    width: 250px;
+    height: 210px;
+}
+
+#contents>div:not(:first-child) {
+    border: 1px dotted #000;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 150px 210px;
+    background-size:  150px 210px;
+}
+
+#contents>div:first-child {
+    padding: 20px 0;
+}
+
+#contents>div:first-child>h3 {
+    color: #fff;
+    padding: 10px;
+    background-color: #e76c6e;
+}
+
+#contents>div:first-child>ul {
+    line-height: 24px;
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 20px 0  0 14px;
+}
+
+#contents>div:first-child span {
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+#contents>div:nth-child(2) {
+    background-image: url(../images/bg1.png);
+}
+
+#contents>div:nth-child(3) {
+    background-image: url(../images/bg2.png);
+}
+
+#contents>div:nth-child(4) {
+    background-image: url(../images/bg3.png);
+}
+
+#contents div.flowerTitle {
+    height: 70px;
+    text-align: right;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    top: 128px;
+}
+
+#contents div.flowerTitle h2 {
+    color: #8a4069;
+}
+
+#contents div.flowerTitle h4 {
+    color: #326cd8;
+    margin-top: 20px;
+}
+/* div#contents */
+
+hr {
+    margin-top: 20px;
+}
+
+/* footer#footer */
+footer#footer {
+    justify-content: space-between;
+}
+
+footer#footer nav#footerGNB {
+    padding-left: 40px;
+}
+
+footer#footer li {
+    height: 60px;
+    font-size: 14px;
+    line-height: 60px;
+    padding: 0 12px;
+}
+
+footer#footer li:hover {
+    color: rgba(34, 34, 34, 0.9);
+    font-weight: bold;
+}
+
+#footer div#copyright {
+    height: 60px;
+    font-size: 14px;
+    line-height: 60px;
+    padding-right: 30px;
+}
+/* footer#footer */
